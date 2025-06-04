@@ -47,7 +47,7 @@ function App() {
 
     try {
       const sessionId = localStorage.getItem("session_uuid");
-      const res = await fetch("https://appointment-chabot.onrender.com/chat", {
+      const res = await fetch("https://appointment-chatbot.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user_text: input, session_id: sessionId }),
